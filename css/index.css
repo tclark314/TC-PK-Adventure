@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    animation: colorChange 4s ease forwards;
+    animation-delay: 19s;
+}
+
+@keyframes colorChange {
+    0% {
+        background: rgb(0, 0, 0);
+    }
+    100% {
+        background:rgb(13, 0, 70);
+    }
+    
+}
+
+#mainStar {
+    position: absolute;
+    top: 10%;
+    left: 58%;
+    font-size: 50px;
+    color: rgb(245, 255, 208);
+    text-shadow:
+        0 0 5px white,
+        0 0 15px white,
+        0 0 30px rgba(255, 255, 255, 0.7);
+    z-index: 2;
+}
+
+#mainStar.zoom {
+    animation: starZoom 2s ease-in forwards;
+}
+
+@keyframes starZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(100);
+    }
+}
+
+#whiteTransition {
+    position: fixed;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
+#whiteTransition.fade {
+    animation: whiteFade 1s ease forwards;
+}
+
+@keyframes whiteFade {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#nightScene {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.star {
+    position:absolute;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#nightScene.visible {
+    opacity: 1;
+}
+
+#introScene {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.footprint {
+    position: absolute;
+    width: 50px;
+    opacity: 0;
+    animation: footprintFade 3s linear forwards;
+
+}
+
+
+.leftFoot {
+    transform: scaleX(-1);
+}
+
+@keyframes footprintFade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.lastStep {
+    opacity: 1;
+    animation: none;
+}
+
+#tree {
+    position: absolute;
+    left: -2%;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1;
+}
+
+#passwordInput {
+    position: absolute;
+    top: 40%;
+    left: 71%;
+    height: 50px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #D9B56D;
+    border-radius: 18px;
+
+    color: #F4EEDC;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    text-align: center;
+
+    padding: 8px 16px;
+    outline: none;
+
+}
+
+#beginButton {
+    position: absolute;
+    top: 63%;
+    left: 73%;
+    height: 50px;
+    width: 200px;
+    background: #D9B56D;
+    color: #081B36;
+
+    border: none;
+    border-radius: 999px;
+
+    padding: 10px 28px;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+    z-index: 1;
+}
+
+#beginButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(217, 181, 109, 0.6);
+}
+
+#mainText {
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    font-size: xxx-large;
+    color: gold;
+}
+
+#secondText{
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    top: 50%;
+    left: 72%;
+    font-size: xxx-large;
+    color: gold;
+}
+
+
+#coupleSilhouette {
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    height: 300px;
+    color: black;
+    transform: translateY(-50%);
+    opacity: 0;
+    animation: fadeInCouple 8s ease forwards;
+    animation-delay: 19s;
+    z-index: 1;
+    
+}
+
+@keyframes fadeInCouple {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(0) scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-50%) translateY(400px) scale(1.6);
+    }
+    
+}
