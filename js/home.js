@@ -15,6 +15,10 @@ timelinePlanet.onclick = function() {
     window.location.href = "timeline.html";
 };
 
+futurePlanet.onclick = function() {
+    window.location.href = "future.html"
+}
+
 
 function movePlanet(planet, angle, radius) {
     let angleInRadians = angle * Math.PI / 180;

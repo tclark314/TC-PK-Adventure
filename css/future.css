@@ -1,0 +1,71 @@
+#constructionSign {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 300px;
+    height: 120px;
+
+    background: repeating-linear-gradient(
+    45deg,
+    #F4D35E 0px,
+    #F4D35E 20px,
+    #3A3025 20px,
+    #3A3025 40px
+    );
+
+    border: 6px solid #3A3025;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+#signText {
+    background: #F4D35E;
+    padding: 15px 20px;
+
+    color: #3A3025;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+    border-radius: 4px;
+}
+
+#constructionRope {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 130px;
+
+    background: repeating-linear-gradient(
+    45deg,
+    #F4D35E 0px,
+    #F4D35E 20px,
+    #3A3025 20px,
+    #3A3025 40px
+    );
+    z-index: -1;
+}
+
+#backButton {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 10%;
+    height: 3%;
+    transform: translateX(-50%);
+}
+
+#text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60%;
+    font-size: xx-large;
+}

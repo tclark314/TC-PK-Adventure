@@ -1,0 +1,242 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #56b44e;
+}
+
+#tree {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 80vw;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#title {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    font-size: 200%;
+    color: rgb(0, 63, 3);
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+#backButton {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-color:   #cfe4a3;
+
+    background: #d9f7e5;
+    cursor: pointer;
+
+    transition: 1s;
+
+}
+
+#backButton span {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    size: 30px;
+    color:  rgb(0, 63, 3);
+    opacity: 0;
+
+}
+
+#backButton:hover {
+    transform: scale(1.75);
+    box-shadow: 0 0 20px #004417;
+}
+
+#backButton:hover span{
+    opacity: 1;
+}
+
+#noteViewer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    pointer-events: none;
+
+    background-color: beige;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    transition: opacity 1s ease;
+}
+
+#noteViewer.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#date {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    font-size: 25px;
+    color: black;
+
+}
+
+#memoryTitle {
+    position: absolute;
+    top:10%;
+    left: 50%;
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+
+    color: black;
+    transform: translateX(-50%);
+
+}
+
+#memory {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+    font-size: 25px;
+    color: black;
+    overflow: auto;
+
+}
+
+.dot {
+    position: absolute;
+    background-color: #F2B8C6;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+.dot:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(255, 0, 200, 1);
+}
+
+#dot1 {
+    top: 93%;
+    left: 48%;
+}
+
+#dot2 {
+    top: 88%;
+    left: 55%;
+}
+
+#dot3 {
+    top:82%;
+    left:35%;
+}
+
+#dot4 {
+    top: 80%;
+    left: 58%;
+}
+
+#dot5 {
+    top: 77%;
+    left: 50%;
+}
+
+#dot6 {
+    top:75%;
+    left:43%;
+}
+
+#dot7 {
+    top: 72%;
+    left: 53%;
+}
+
+#dot8 {
+    top: 67%;
+    left: 50%;
+}
+
+#dot9 {
+    top: 65%;
+    left: 46%;
+}
+
+#dot10 {
+    top: 60%;
+    left: 52%;
+}
+
+#dot11 {
+    top:55%;
+    left:45%;
+}
+
+#dot12 {
+    top: 52%;
+    left: 62%;
+}
+
+#dot13 {
+    top: 50%;
+    left: 50%;
+}
+
+#dot14 {
+    top:48%;
+    left:40%;
+}
+
+#dot15 {
+    top: 45%;
+    left: 51%;
+}
+
+#dot16 {
+    top: 46%;
+    left: 30%;
+}
+
+#dot17 {
+    top: 41%;
+    left: 78%;
+}
+
+#dot18 {
+    top: 40%;
+    left: 47%;
+}
+
+#dot19 {
+    top:38%;
+    left:37%;
+}
+
+#dot20 {
+    top: 37%;
+    left: 58%;
+}
+
+#dot21 {
+    top: 35%;
+    left: 22%;
+}
+
+#dot22 {
+    top: 30%;
+    left: 48%;
+}
+
